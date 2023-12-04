@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 fn calculate_calibration_sum(lines: Vec<&str>) -> u32 {
     lines.iter()
         .map(|l| l.chars().filter(|c| c.is_numeric()).collect::<Vec<char>>())
